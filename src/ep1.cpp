@@ -17,7 +17,7 @@ int main()
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
-    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Gay Triangle", NULL, NULL);
     if (window == NULL)
     {
         std::cout << "Failed to create GLFW window" << std::endl;
@@ -33,7 +33,7 @@ int main()
         return -1;
     }
 
-    Shader ourShader("/home/kode/src/opengl/src/vertex.glsl", "/home/kode/src/opengl/src/fragment.glsl"); // you can name your shader files however you like
+    Shader ourShader("/home/kode/src/opengl/src/vertex.glsl", "/home/kode/src/opengl/src/fragment.glsl");
 
     float vertices[] = {
         // positions         // colors
